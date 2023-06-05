@@ -8,20 +8,25 @@ public class merge2SortedArrays {
         int i = 0, j = 0;
         int k = 0;
         while (i < m && j < n) {
-            if (arr2[j] > arr1[i]) {
+            if (arr1[i] <= arr2[j]) {
                 arr[k] = arr1[i];
                 i++;
-                k++;
-            } else if (arr1[i] == arr2[j]) {
-                arr[k] = arr1[i];
-                i++;
-                j++;
                 k++;
             } else {
                 arr[k] = arr2[j];
                 j++;
                 k++;
             }
+        }
+        while (i < m) {
+            arr[k] = arr1[i];
+            i++;
+            k++;
+        }
+        while (j < n) {
+            arr[k] = arr2[j];
+            j++;
+            k++;
         }
         return arr;
     }
