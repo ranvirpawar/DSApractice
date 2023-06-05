@@ -18,11 +18,13 @@ public class merge2SortedArrays {
                 k++;
             }
         }
+        // to add remaining elements of arr1
         while (i < m) {
             arr[k] = arr1[i];
             i++;
             k++;
         }
+        // to add remaining elements of arr2
         while (j < n) {
             arr[k] = arr2[j];
             j++;
