@@ -49,6 +49,8 @@ public class recursion {
 
     }
 
+   
+
     public static void main(String[] args) {
         // int n = 5;
         // int ans = new recursion().fact(n);
@@ -56,6 +58,7 @@ public class recursion {
         // System.out.println(sum(n));
         // System.out.println(power(3, n));
         // printNumbers(7);
-        System.out.println(count(1234567890));
+        // System.out.println(count(1234567890));
+        myPow(3.1243, 78);
     }
 }
