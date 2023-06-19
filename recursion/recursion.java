@@ -46,10 +46,33 @@ public class recursion {
         }
         printNumbers(n - 1);
         System.out.print(n + " ");
-
     }
 
-   
+    // count number of zeros
+    public static int countZeros(int n) {
+        if (n < 10) {
+            if (n == 0) {
+                return 1;
+            } else {
+                return 0;
+            }
+        }
+        if (n % 10 == 0) {
+            return 1 + countZeros(n / 10);
+        } else {
+            return countZeros(n / 10);
+        }
+    }
+
+    // multiplication without using *
+    public static int multiplication(int m, int n) {
+        if (m == 0 || n == 0) {
+            return 0;
+        }
+        int ans = m + multiplication(m, n - 1);
+        return ans;
+
+    }
 
     public static void main(String[] args) {
         // int n = 5;
@@ -59,6 +82,8 @@ public class recursion {
         // System.out.println(power(3, n));
         // printNumbers(7);
         // System.out.println(count(1234567890));
-        myPow(3.1243, 78);
+        // myPow(3.1243, 78);
+        // System.out.println(multiplication(1000, 4));
+        System.out.println(countZeros(102034005));
     }
 }
