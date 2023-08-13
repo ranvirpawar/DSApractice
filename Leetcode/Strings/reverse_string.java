@@ -7,10 +7,18 @@
 
 // Note that s may contain leading or trailing spaces or multiple spaces between two words. The returned string should only have a single space separating the words. Do not include any extra spaces.
 
- 
+import strings.strings;
 
 class Solution {
     public String reverseWords(String s) {
+
+        String reverse = "";
+        for(int i =0; i< s.length(); i++){
+            reverse += s.charAt(i;)
+        }
+
+
+
         String[] words = s.split("\\s+");
 
         // Reverse the order of the words in the list.
