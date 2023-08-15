@@ -6,19 +6,49 @@ class linkedlist {
         Node<Integer> s3 = new Node(30);
         Node<Integer> s4 = new Node(40);
         Node<Integer> s5 = new Node(45);
-        
-        s1.next = s2;  
+
+        s1.next = s2;
         s2.next = s3;
         s3.next = s4;
         s4.next = s5;
-        
+
         return s1;
 
     }
-    public static  void print(Node<Integer> head){
+
+    public static void print(Node<Integer> head) {
         Node<Integer> current = head;
-        while(current != null){
+        while (current != null) {
             System.out.print(current.data + " --> ");
+            current = current.next;
+
+        }
+    }
+
+    /// Calculating the length of linked list
+
+    public static void calculatelength(Node<Integer> head) {
+        Node<Integer> current = head;
+        int length = 0;
+        while (current != null) {
+            length++;
+            current = current.next;
+        }
+        System.out.println(" ");
+        System.out.println(length + " is the length of linkedList");
+    }
+
+    /// printing i th node of linked list
+
+    public static void printIthNode(Node<Integer> head, int i) {
+        Node<Integer> current = head;
+        int count = 0;
+        while (current != null) {
+            if (count == i) {
+                System.out.println(current.data + " is value at given ith place");
+                break;
+            }
+            count++;
             current = current.next;
 
         }
@@ -26,15 +56,18 @@ class linkedlist {
     }
 
     public static void main(String[] args) {
-       Node<Integer> head = createLinkedList();
+        Node<Integer> head = createLinkedList();
         print(head);
+        calculatelength(head);
+        int i = 3;
+        printIthNode(head, i);
 
     }
 }
 
 class Node<T> {
     T data;
-    Node <T> next;
+    Node<T> next;
 
     Node(T data) {
         this.data = data;
