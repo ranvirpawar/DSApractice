@@ -24,14 +24,14 @@ WHERE COUNTRYCODE = "USA" AND POPULATION > 120000;
 
 Query all columns (attributes) for every row in the CITY table.
 
-T```
+```
 SELECT * FROM City;
 ```
-
 > QUESTION
 
 Query all columns for a city in CITY with the ID 1661.
 
+- ans
 ```
 SELECT * FROM City
 WHERE ID = "1661";
@@ -41,8 +41,10 @@ WHERE ID = "1661";
 > QUESTION
 
 Query the names of all the Japanese cities in the CITY table. The COUNTRYCODE for Japan is JPN.
-The CITY table is described as follows:
 
+[TABLE ](https://s3.amazonaws.com/hr-challenge-images/9336/1449345840-5f0a551030-Station.jpg "STATION")
+
+- ans 
 ```
 SELECT NAME FROM CITY
 WHERE COUNTRYCODE = "JPN";
@@ -52,7 +54,7 @@ WHERE COUNTRYCODE = "JPN";
 > QUESTION
 
 Query a list of CITY and STATE from the STATION table.
-
+- ans
 ```
 SELECT CITY, STATE FROM STATION;
 
