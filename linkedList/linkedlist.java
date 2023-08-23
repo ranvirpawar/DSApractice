@@ -1,6 +1,8 @@
+import java.util.Scanner;
+
 class linkedlist {
 
-    public static Node<Integer> createLinkedList() {
+    public static Node<Integer> createLinkedListhardCode() {
         Node<Integer> s1 = new Node(10);
         Node<Integer> s2 = new Node(20);
         Node<Integer> s3 = new Node(30);
@@ -23,6 +25,30 @@ class linkedlist {
             current = current.next;
 
         }
+    }
+    public static Node<Integer> createLinkedList() {
+        Scanner sc = new Scanner(System.in);
+        int data = sc.nextInt();
+        Node<Integer> head = null;
+        while (data != -1) {
+            Node<Integer> currentNode = new Node<Integer>(data);
+
+            if (head == null) {
+                head = currentNode;
+            } else {
+                Node<Integer> tail = head;
+                while (tail.next != null) {
+                    tail = tail.next;
+                }
+                // tail refers to last node
+                // now connect currentNode after last node
+                tail.next = currentNode;
+            }
+            data = sc.nextInt();
+
+        }
+        return head;
+
     }
 
     /// Calculating the length of linked list
