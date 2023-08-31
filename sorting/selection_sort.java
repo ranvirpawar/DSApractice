@@ -7,7 +7,7 @@ class selection_sort {
             int minValue = Integer.MAX_VALUE;
             int minIndex = 0;
             for (int j = i; j < n; j++) {
-                // finding minimum value
+                // finding minimum value in the array 
                 if (arr[j] < minValue) {
                     minValue = arr[j];
                     minIndex = j;

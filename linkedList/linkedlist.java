@@ -26,6 +26,7 @@ class linkedlist {
 
         }
     }
+
     public static Node<Integer> createLinkedList() {
         Scanner sc = new Scanner(System.in);
         int data = sc.nextInt();
@@ -81,12 +82,36 @@ class linkedlist {
 
     }
 
-    public static void main(String[] args) {
-        Node<Integer> head = createLinkedList();
+    /// inserting a new node in the singlt linked list
+
+    public static void insertNode(Node<Integer> head) {
+
+        Node<Integer> newNode = new Node(10000);
+        // inserting above node after 40;
+        Node<Integer> current = head;
+        Node<Integer> prev = null;
+
+        while (current != null) {
+            if (current.data == 40) {
+                Node<Integer> temp = current.next;
+                current.next = newNode;
+                newNode.next = temp;
+                break;
+            }
+        }
+
         print(head);
-        calculatelength(head);
-        int i = 3;
-        printIthNode(head, i);
+
+    }
+
+    public static void main(String[] args) {
+        // Node<Integer> head = createLinkedList();
+        // print(head);
+        // calculatelength(head);
+        // int i = 3;
+        // printIthNode(head, i);
+        Node<Integer> head = createLinkedListhardCode();
+        insertNode(head);
 
     }
 }
