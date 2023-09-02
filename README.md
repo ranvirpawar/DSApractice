@@ -1,4 +1,4 @@
-# DSA Practice Repository
+# DSA Practice 
 
 Welcome to the DSA Practice Repository! This repository is a collection of data structure and algorithm (DSA) concepts and problems that I have solved on various online platforms like LeetCode, GFG and HackerRank,. The primary goal of this repository is to document my DSA learning journey.
 
