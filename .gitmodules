@@ -1,0 +1,3 @@
+[submodule "Leetcode/QuestionsV2/leetCodeV2"]
+	path = Leetcode/QuestionsV2/leetCodeV2
+	url = https://github.com/ranvirpawar/leetCodeV2.git
