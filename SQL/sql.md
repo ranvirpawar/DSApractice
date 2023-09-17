@@ -91,7 +91,7 @@ Query the two cities in STATION with the shortest and longest CITY names, as wel
 SELECT CITY C, LENGTH(CITY) L
 FROM STATION 
 ORDER BY L ASC, C ASC
-LIMIT 1;
+LIMIT 1;;;;;
 
 SELECT CITY C, LENGTH(CITY) L
 FROM STATION 
@@ -100,5 +100,6 @@ LIMIT 1;
 
 
 ```
+
 
 
