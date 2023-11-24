@@ -8,8 +8,10 @@ class Solution{
         }
     }
 }
+
+// array having duplicate numbers twice find the single element from it
 public class Solution {
-    public static int getSingleElement(int []arr){
+        public static int getSingleElement(int []arr){
         // Write your code here.
         int no =0;
         for(int i=0; i<arr.length;i++){
