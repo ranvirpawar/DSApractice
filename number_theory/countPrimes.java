@@ -29,8 +29,8 @@ public class countPrimes {
     }
 
     public static int countPrimeBetterapproach(int n) {
-        boolean[] barray = new boolean[n + 1];
-        Arrays.fill(barray, true);
+        boolean[] biarray = new boolean[n + 1];
+        Arrays.fill(biarray, true);
         barray[0] = false;
         barray[1] = false;
         for (int i = 0; i * i < n; i++) {
