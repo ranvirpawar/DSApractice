@@ -24,7 +24,7 @@ public class fibnumber {
     }
 
     public static void main(String[] args) {
-        System.out.println(fibnoRecursion(9));
+        System.out.println(fibnumber(5));
     }
 
 }
