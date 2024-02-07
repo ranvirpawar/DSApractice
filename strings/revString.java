@@ -8,9 +8,15 @@ public class revString {
         StringBuilder sb = new StringBuilder();
         for(int i=s.length()-1; i>=0;i--){
             sb.append(s.charAt(i)) ;
+
         }
         return sb.toString();
     }
+
+for(last to first){
+str += s.charAt(i)
+}
+
     public static void main(String[] args) {
         String str = " RANVIR";
         int i = 0;
